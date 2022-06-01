@@ -1,0 +1,127 @@
+:root {
+  --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
+}
+
+
+* {
+  margin: 15;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("images/bg.jpg");
+  height: 100vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Poppins', sans-serif;
+  background-size: cover;
+  background-size: cover
+  
+}
+.container {
+  width: 50vh;
+  margin: 50px auto;
+  background-color: rgba(239, 243, 246, 0.766);
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+.conainer > * {
+  margin-bottom: 20px;
+}
+.input-text {
+  width: 180px;
+  background-color: white;
+  border-radius: 5px;
+  color: green;
+  font-size: 22px;
+  padding: 5px;
+  text-align: center;
+  margin: 30px;
+}
+.content {
+  color: black;
+  padding: 20px;
+  line-height: 2rem;
+  border: 1px solid green;
+  border-radius: 10px;
+  height: 50vh;
+}
+.locationDetails {
+  font-weight: bold;
+  font-size: 20px;
+  font-weight: 600;
+}
+.weather-status {
+  padding: 20px;
+}
+.weather-status {
+  padding: 20px;
+}
+.temp {
+  font-size: 50pt;
+  font-weight: 700;
+  margin: 20px 0;
+  text-shadow: 2px 2px #ff0000;
+}
+.minMax,
+.weather ,
+.date,
+.city{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 10%;
+  border: none;
+  height: 44px;
+  width: 84px;
+  outline: none;
+  background: #f403032b;
+  color: white;
+  font-size: large;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #2cf0092b;
+}
+.header__title {
+  margin: 3px;
+  flex: 1;
+  max-width: 115rem;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  row-gap: 3rem;
+  align-content: center;
+  justify-content: center;
+
+  align-items: start;
+  justify-items: start;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 0.75;
+}
+.highlight {
+  position: relative;
+}
+
+.highlight::after {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  transform: scale(1.07, 1.05) skewX(-15deg);
+  background-image: var(--gradient-primary);
+}
